@@ -1,0 +1,97 @@
+@import "variables";
+@import "buttons";
+
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    margin: 0 -15px;
+    text-align: left;
+
+    h2 {
+        font-size: 1.3em;
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: 300;
+    }
+
+    article {
+        flex: 1;
+        margin: 15px;
+
+        &.bordered {
+            border: 1px solid #666;
+            border-radius: 0.2em;
+            padding: 15px;
+        }
+    }
+}
+
+.header-bar {
+    background-color: #333;
+    height: 3px;
+}
+
+.teaser {
+    display: flex;
+    align-items: center;
+
+    h1 {
+        font-size: 1.8em;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    div {
+        flex: 1;
+    }
+
+    div:last-child {
+        text-align: right;
+        flex: none;
+    }
+}
+
+.title {
+    font-size: 3em;
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.line {
+    height: 10px;
+    background-color: #666;
+    margin: 10px 0;
+
+    @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+            width: 95% + random(5);
+        }
+    }
+
+    &:last-child {
+        width: 30% + random(70);
+    }
+}
+
+.background {
+    padding: 2em;
+}
+
+.background-inverse {
+    background-color: #333;
+    color: #fff;
+}
