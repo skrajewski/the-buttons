@@ -12,14 +12,6 @@
         transform: translateY(0.3px);
     }
 
-    &.button-thin {
-        padding: 0.47em 1.24em;
-    }
-
-    &.button-fat {
-        padding: 1.23em 1.24em;
-    }
-
     &.button-filled {
         background-color: $color;
         border-color: darken($color, 3%);
@@ -81,11 +73,31 @@
     font-size: 0.6em;
 }
 
+/* thickness */
+.button-thin {
+    padding: 0.47em 1.24em;
+}
+
+.button-fat {
+    padding: 1.23em 1.24em;
+}
+
+/* radius */
+.button-sharp {
+    border-radius: 1px;
+}
+
+.button-rounded {
+    border-radius: 0.4em;
+}
+
+/* display */
 .button-block {
     display: block;
     width: 100%;
 }
 
+/* variants */
 .button-success {
     @include button-variant($colorSuccess);
 }
