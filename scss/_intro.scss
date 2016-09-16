@@ -1,0 +1,34 @@
+#intro {
+    background-color: #0c82df;
+    padding: 30px;
+    color: #fafafa;
+    text-align: center;
+    // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+
+    p {
+        font-weight: normal;;
+        font-size: 3.5em;
+        margin: 0;
+    }
+
+    p + p {
+        font-size: 2.5em;
+        font-weight: 300;
+    }
+
+    s {
+        position: relative;
+        text-decoration: none;
+
+        &:after {
+            content: '';
+            top: 50%;
+            left: 0;
+            width: 100%;
+            background-color: fade-out(#333, 0.01);
+            height: 13px;
+            position: absolute;
+            transform: rotate(15deg);
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    margin: 0 -15px;
+}
+
+.col {
+    flex: 1;
+    padding: 15px;
+
+    &.h-center {
+        text-align: center;
+    }
+
+    &.v-center {
+        align-self: center;
+    }
+}
