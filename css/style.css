@@ -9,7 +9,7 @@
   cursor: pointer;
   border-radius: 0.2em;
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: 0.75em;
   line-height: 1em;
   transition: background 0.12s ease-in-out;
   transition-property: background, box-shadow, transform, background-color;
@@ -46,16 +46,16 @@
     outline: none; }
 
 .button-icon {
-  padding: 0.76em 1.24em; }
+  padding: 0.76em 0.76em; }
   .button-icon i {
     font-size: 0.99em; }
 
 /* size */
 .button-large {
-  font-size: 1.2em; }
+  font-size: 0.95em; }
 
 .button-small {
-  font-size: 0.6em; }
+  font-size: 0.55em; }
 
 /* thickness */
 .button-thin {
@@ -299,15 +299,15 @@ body {
   background-color: #666;
   margin: 10px 0; }
   .line:nth-child(1) {
-    width: 96%; }
+    width: 98%; }
   .line:nth-child(2) {
     width: 98%; }
   .line:nth-child(3) {
-    width: 96%; }
+    width: 98%; }
   .line:nth-child(4) {
-    width: 99%; }
+    width: 96%; }
   .line:nth-child(5) {
-    width: 97%; }
+    width: 96%; }
   .line:nth-child(6) {
     width: 98%; }
   .line:nth-child(7) {
@@ -315,11 +315,11 @@ body {
   .line:nth-child(8) {
     width: 99%; }
   .line:nth-child(9) {
-    width: 99%; }
-  .line:nth-child(10) {
     width: 100%; }
+  .line:nth-child(10) {
+    width: 98%; }
   .line:last-of-type {
-    width: 34%;
+    width: 88%;
     margin-bottom: 1em; }
 
 .background {

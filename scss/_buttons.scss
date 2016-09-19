@@ -62,7 +62,7 @@
     cursor: pointer;
     border-radius: 0.2em;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: $buttonBaseSize;
     line-height: 1em;
     transition: background 0.12s ease-in-out;
     transition-property: background, box-shadow, transform, background-color;
@@ -76,7 +76,7 @@
 }
 
 .button-icon {
-    padding: 0.76em 1.24em;
+    padding: 0.76em 0.76em;
 
     i {
         font-size: 0.99em;
@@ -85,11 +85,11 @@
 
 /* size */
 .button-large {
-    font-size: 1.2em;
+    font-size: $buttonBaseSize + 0.2em;
 }
 
 .button-small {
-    font-size: 0.6em;
+    font-size: $buttonBaseSize - 0.2em;
 }
 
 /* thickness */
