@@ -9,10 +9,13 @@
   cursor: pointer;
   border-radius: 0.2em;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 1em;
+  line-height: 1em;
   transition: background 0.12s ease-in-out;
   transition-property: background, box-shadow, transform, background-color;
-  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  display: inline-block; }
   .button:hover {
     background-color: rgba(102, 102, 102, 0.05); }
   .button:active {
@@ -22,7 +25,8 @@
   .button.button-filled {
     background-color: #666;
     border-color: #5e5e5e;
-    color: #fff; }
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
     .button.button-filled:hover {
       background-color: #595959;
       border-color: #595959; }
@@ -41,16 +45,22 @@
   .button:focus {
     outline: none; }
 
+.button-icon {
+  padding: 0.76em 1.24em; }
+  .button-icon i {
+    font-size: 0.99em; }
+
 /* size */
 .button-large {
-  font-size: 1em; }
+  font-size: 1.2em; }
 
 .button-small {
   font-size: 0.6em; }
 
 /* thickness */
 .button-thin {
-  padding: 0.47em 1.24em; }
+  padding-top: 0.47em;
+  padding-bottom: 0.47em; }
 
 .button-fat {
   padding: 1.23em 1.24em; }
@@ -80,7 +90,8 @@
   .button-success.button-filled {
     background-color: #8BC34A;
     border-color: #84bf3f;
-    color: #fff; }
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
     .button-success.button-filled:hover {
       background-color: #7eb73d;
       border-color: #7eb73d; }
@@ -109,7 +120,8 @@
   .button-warning.button-filled {
     background-color: #FF9800;
     border-color: #f08f00;
-    color: #fff; }
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
     .button-warning.button-filled:hover {
       background-color: #e68900;
       border-color: #e68900; }
@@ -138,7 +150,8 @@
   .button-danger.button-filled {
     background-color: #f44336;
     border-color: #f33527;
-    color: #fff; }
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
     .button-danger.button-filled:hover {
       background-color: #f32c1e;
       border-color: #f32c1e; }
@@ -167,7 +180,8 @@
   .button-secondary.button-filled {
     background-color: #2196F3;
     border-color: #128ff2;
-    color: #fff; }
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
     .button-secondary.button-filled:hover {
       background-color: #0d8aee;
       border-color: #0d8aee; }
@@ -242,12 +256,8 @@ body {
 .articles {
   display: flex;
   margin: 0 -15px;
-  text-align: left; }
-  .articles h2 {
-    font-size: 1.3em;
-    text-transform: uppercase;
-    margin: 0;
-    font-weight: 300; }
+  text-align: left;
+  font-size: 1rem; }
   .articles article {
     flex: 1;
     margin: 15px; }
@@ -255,6 +265,11 @@ body {
       border: 1px solid #666;
       border-radius: 0.2em;
       padding: 15px; }
+    .articles article h2 {
+      font-size: 1.3em;
+      text-transform: uppercase;
+      margin: 0;
+      font-weight: 300; }
 
 .header-bar {
   background-color: #0c82df;
@@ -284,27 +299,28 @@ body {
   background-color: #666;
   margin: 10px 0; }
   .line:nth-child(1) {
-    width: 99%; }
+    width: 96%; }
   .line:nth-child(2) {
-    width: 99%; }
+    width: 98%; }
   .line:nth-child(3) {
     width: 96%; }
   .line:nth-child(4) {
     width: 99%; }
   .line:nth-child(5) {
-    width: 100%; }
+    width: 97%; }
   .line:nth-child(6) {
-    width: 97%; }
+    width: 98%; }
   .line:nth-child(7) {
-    width: 97%; }
+    width: 98%; }
   .line:nth-child(8) {
-    width: 97%; }
+    width: 99%; }
   .line:nth-child(9) {
-    width: 98%; }
+    width: 99%; }
   .line:nth-child(10) {
-    width: 98%; }
-  .line:last-child {
-    width: 54%; }
+    width: 100%; }
+  .line:last-of-type {
+    width: 34%;
+    margin-bottom: 1em; }
 
 .background {
   padding: 2em; }
@@ -326,3 +342,11 @@ body {
     margin: 0.5em 0; }
   .demo-section:first-of-type {
     padding-top: 0; }
+
+.table {
+  border: 1px solid #666;
+  border-collapse: collapse; }
+  .table td {
+    border: 1px solid #666;
+    padding: 5px 10px;
+    min-width: 3em; }

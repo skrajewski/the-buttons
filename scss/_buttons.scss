@@ -12,10 +12,18 @@
         transform: translateY(0.3px);
     }
 
+    // &:disabled {
+    //     color: lighten(desaturate($color, 10%), 25%);
+    //     border-color: lighten(desaturate($color, 10%), 20%);
+    //     cursor: not-allowed;
+    //     box-shadow: none;
+    // }
+
     &.button-filled {
         background-color: $color;
         border-color: darken($color, 3%);
         color: #fff;
+        text-shadow: 0 1px 0 rgba(0,0,0,0.2);
 
         &:hover {
             background-color: darken($color, 5%);
@@ -54,19 +62,30 @@
     cursor: pointer;
     border-radius: 0.2em;
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 1em;
+    line-height: 1em;
     transition: background 0.12s ease-in-out;
     transition-property: background, box-shadow, transform, background-color;
     box-shadow: 0 4px 6px -2px fade-out(#000, 0.8);
+    box-sizing: border-box;
+    display: inline-block;
 
     &:focus {
         outline: none;
     }
 }
 
+.button-icon {
+    padding: 0.76em 1.24em;
+
+    i {
+        font-size: 0.99em;
+    }
+}
+
 /* size */
 .button-large {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .button-small {
@@ -75,7 +94,8 @@
 
 /* thickness */
 .button-thin {
-    padding: 0.47em 1.24em;
+    padding-top: 0.47em;
+    padding-bottom: 0.47em;
 }
 
 .button-fat {
