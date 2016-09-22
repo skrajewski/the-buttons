@@ -222,10 +222,9 @@
       box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3); }
 
 #intro {
-  background-color: #0c82df;
+  background-color: grey;
   padding: 30px;
-  color: #fafafa;
-  text-align: center; }
+  color: #fafafa; }
   #intro p {
     font-weight: normal;
     font-size: 3.5em;
@@ -326,23 +325,23 @@ body {
   .line:nth-child(2) {
     width: 100%; }
   .line:nth-child(3) {
-    width: 98%; }
+    width: 97%; }
   .line:nth-child(4) {
-    width: 98%; }
+    width: 99%; }
   .line:nth-child(5) {
-    width: 96%; }
+    width: 100%; }
   .line:nth-child(6) {
-    width: 98%; }
+    width: 99%; }
   .line:nth-child(7) {
-    width: 96%; }
+    width: 98%; }
   .line:nth-child(8) {
     width: 98%; }
   .line:nth-child(9) {
     width: 98%; }
   .line:nth-child(10) {
-    width: 99%; }
+    width: 98%; }
   .line:last-of-type {
-    width: 81%;
+    width: 82%;
     margin-bottom: 1em; }
 
 .background {
@@ -373,3 +372,10 @@ body {
     border: 1px solid #666;
     padding: 5px 10px;
     min-width: 3em; }
+
+.my-thought {
+  border-left: 5px solid #DDD;
+  padding-left: 1em; }
+  .my-thought p {
+    color: #777;
+    font-size: 0.9em; }
