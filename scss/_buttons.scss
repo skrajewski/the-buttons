@@ -1,3 +1,13 @@
+// focus
+// disabled
+// pressed
+// merged
+// pagination
+// toolbar
+// ARIA
+// accessibility / color blidness
+// playground
+
 @mixin button-variant($color) {
     border-color: $color;
     color: $color;
@@ -10,6 +20,11 @@
         background-color: fade-out(darken($color, 6%), 0.9);
         box-shadow: 0 4px 4px -3px fade-out(#000, 0.7);
         transform: translateY(0.3px);
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 4px 4px -3px fade-out(#000, 0.5), 0 0 2px 1px $color;
     }
 
     // &:disabled {
@@ -49,6 +64,10 @@
         &:active {
             background-color: fade-out(darken($color, 6%), 0.9);
         }
+
+        &:focus {
+            box-shadow: 0 4px 10px -4px fade-out(#000, 0.7);
+        }
     }
 }
 
@@ -69,10 +88,6 @@
     box-shadow: 0 4px 6px -2px fade-out(#000, 0.8);
     box-sizing: border-box;
     display: inline-block;
-
-    &:focus {
-        outline: none;
-    }
 }
 
 .button-icon {
