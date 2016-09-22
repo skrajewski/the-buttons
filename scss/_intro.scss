@@ -1,19 +1,19 @@
 #intro {
-    background-color: grey;
     padding: 30px;
+    background-color: $colorSuccess;
     color: #fafafa;
-    // text-align: center;
-    // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+    //: center;
+    //: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
 
     p {
-        font-weight: normal;;
-        font-size: 3.5em;
         margin: 0;
+        font-weight: normal;
+        font-size: 3.5em;
     }
 
     p + p {
-        font-size: 2.5em;
         font-weight: 300;
+        font-size: 2.5em;
     }
 
     s {
@@ -21,13 +21,13 @@
         text-decoration: none;
 
         &:after {
-            content: '';
+            position: absolute;
             top: 50%;
             left: 0;
             width: 100%;
-            background-color: fade-out(#333, 0.01);
             height: 13px;
-            position: absolute;
+            background-color: fade-out(#333, 0.01);
+            content: '';
             transform: rotate(15deg);
         }
     }
