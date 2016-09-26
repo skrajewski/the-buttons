@@ -321,27 +321,27 @@ body {
   background-color: #666;
   margin: 10px 0; }
   .line:nth-child(1) {
-    width: 98%; }
+    width: 97%; }
   .line:nth-child(2) {
-    width: 97%; }
+    width: 98%; }
   .line:nth-child(3) {
-    width: 97%; }
+    width: 100%; }
   .line:nth-child(4) {
     width: 100%; }
   .line:nth-child(5) {
     width: 96%; }
   .line:nth-child(6) {
-    width: 100%; }
+    width: 96%; }
   .line:nth-child(7) {
-    width: 100%; }
+    width: 98%; }
   .line:nth-child(8) {
-    width: 97%; }
+    width: 98%; }
   .line:nth-child(9) {
-    width: 99%; }
+    width: 100%; }
   .line:nth-child(10) {
     width: 96%; }
   .line:last-of-type {
-    width: 32%;
+    width: 85%;
     margin-bottom: 1em; }
 
 .background {
@@ -379,3 +379,36 @@ body {
   .my-thought p {
     color: #777;
     font-size: 0.9em; }
+
+.color-list {
+  list-style: none;
+  display: inline-block;
+  text-align: center; }
+  .color-list li {
+    margin: 5px 20px;
+    float: left; }
+  .color-list::after {
+    content: '';
+    clear: both;
+    display: table; }
+
+.color-examples {
+  margin: 50px 0; }
+  .color-examples > div {
+    margin: 20px 0; }
+
+.color {
+  width: 32px;
+  height: 32px;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px; }
+  .color.color-success {
+    background-color: #8BC34A; }
+  .color.color-warning {
+    background-color: #FF9800; }
+  .color.color-danger {
+    background-color: #f44336; }
+  .color.color-secondary {
+    background-color: #2196F3; }

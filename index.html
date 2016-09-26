@@ -44,7 +44,7 @@
 
             <h1>Prototype button</h1>
 
-            <p>The main purpose was redesigned an ugly native, browser button to fresh, modern and good-looking equivalent.</p>
+            <p>The main purpose was redesigned an ugly native, browser button to fresh, modern and good-looking equivalent. It has custom behavior such as focus, hover, and active.</p>
 
             <div class="row center">
                 <div class="col v-center">
@@ -56,15 +56,70 @@
             </div>
 
             <p>
-                As you can see, although a new button is fresher and better styled than a native button, it still looks boring and not interested. But together with new style, we introduced a few CSS classes which could modify final appearance.
+                As you can see, although a new button is fresher and better styled than a native button, it still looks boring and not interested. But together with new style, I introduced a few CSS classes which could modify final appearance.
             </p>
 
-            <div class="center">
-                <button class="button">Normal button</button>
-                <button class="button button-filled">Filled button</button>
-                <button class="button button-light">Light button</button>
+            <div class="center" style="padding: 50px 0;">
+                <button style="margin: 0 10px;" class="button">Normal button</button>
+                <button style="margin: 0 10px;" class="button button-filled">Filled button</button>
+                <button style="margin: 0 10px;" class="button button-light">Light button</button>
             </div>
 
-            <p></p>
+            <p>Looks good, but these buttons suffer for lack of meaning...</p>
+
+            <h2>Colors</h2>
+
+            <p>Colors are everywhere. They are meaningful and eye-catching. If you see, e.g. red color you'll expect an important information or an action. Green could mean success, but orange - warning. Let add some colors to buttons...</p>
+
+            <ul class="color-list">
+                <li><div class="color color-success"></div> Success</li>
+                <li><div class="color color-warning"></div> Warning</li>
+                <li><div class="color color-danger"></div> Danger</li>
+                <li><div class="color color-secondary"></div> Secondary</li>
+            </ul>
+
+            <div class="center color-examples">
+                <div>
+                    <button style="margin: 0 10px;" class="button">Button</button>
+                    +
+                    <div class="color color-success"></div>
+                    =
+                    <button style="margin: 0 10px;" class="button button-success">Button</button>
+                </div>
+
+                <div>
+                    <button style="margin: 0 10px;" class="button button-filled">Button</button>
+                    +
+                    <div class="color color-warning"></div>
+                    =
+                    <button style="margin: 0 10px;" class="button button-warning button-filled">Button</button>
+                </div>
+
+                <div>
+                    <button style="margin: 0 10px;" class="button button-light">Button</button>
+                    +
+                    <div class="color color-danger"></div>
+                    =
+                    <button style="margin: 0 10px;" class="button button-danger button-light">Button</button>
+                </div>
+
+                <div>
+                    <button style="margin: 0 10px;" class="button button-filled">Button</button>
+                    +
+                    <div class="color color-secondary"></div>
+                    =
+                    <button style="margin: 0 10px;" class="button button-secondary button-filled">Button</button>
+                </div>
+
+            </div>
+
+            <p>
+                Above random examples of mixing colors and variants show how We can obtain intresting effect very quickly. But the power
+
+            </p>
+        </div>
+
+            <p>
+            </p>
     </body>
 </html>

@@ -147,3 +147,52 @@ body {
         font-size: 0.9em;
     }
 }
+
+.color-list {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+
+    li {
+        margin: 5px 20px;
+        float: left;
+    }
+
+    &::after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
+
+.color-examples {
+    margin: 50px 0;
+    > div {
+        margin: 20px 0;
+    }
+}
+
+.color {
+    width: 32px;
+    height: 32px;
+    border-radius: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+
+    &.color-success {
+        background-color: $colorSuccess;
+    }
+
+    &.color-warning {
+        background-color: $colorWarning;
+    }
+
+    &.color-danger {
+        background-color: $colorDanger;
+    }
+
+    &.color-secondary {
+        background-color: $colorSecondary;
+    }
+}
