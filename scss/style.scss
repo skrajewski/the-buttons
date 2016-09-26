@@ -205,3 +205,19 @@ footer {
         background-color: $colorSecondary;
     }
 }
+
+pre {
+    // white-space: pre-line;
+    background-color: #444444;
+    color: #eee;
+    padding: 1em;
+    font-family: Inconsolata;
+    font-size: 0.9em;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset;
+    border-radius: 3px;
+
+    strong {
+        color: #fff;
+    }
+}
