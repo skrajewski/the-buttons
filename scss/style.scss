@@ -221,3 +221,7 @@ pre {
         color: #fff;
     }
 }
+
+.blind {
+    filter: url('css/filters.svg#protanopia');
+}

@@ -90,6 +90,10 @@
     box-sizing: border-box;
     display: inline-block;
     text-decoration: none;
+
+    .fa {
+        line-height: 0.95em; // value for font-awesome
+    }
 }
 
 .button-icon {
@@ -149,4 +153,37 @@
 
 .button-secondary {
     @include button-variant($colorSecondary);
+}
+
+.button-merged {
+    display: flex;
+    border-collapse: collapse;
+
+    .button {
+        display: table-cell;
+        display: inline;
+    }
+
+    .button:first-child:not(:last-child) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: 0;
+    }
+
+    .button:last-child:not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .button + .button:not(:last-child) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: 0;
+    }
+
+    .button + .button {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
 }
