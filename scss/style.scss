@@ -175,7 +175,7 @@ footer {
 }
 
 .color-examples {
-    margin: 50px 0;
+    // margin: 50px 0;
     > div {
         margin: 20px 0;
     }
@@ -188,6 +188,8 @@ footer {
     display: inline-block;
     vertical-align: middle;
     margin: 0 10px;
+    background-color: $colorDefault;
+    cursor: pointer;
 
     &.color-success {
         background-color: $colorSuccess;

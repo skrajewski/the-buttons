@@ -415,27 +415,27 @@ footer {
   background-color: #666;
   margin: 10px 0; }
   .line:nth-child(1) {
-    width: 97%; }
+    width: 96%; }
   .line:nth-child(2) {
     width: 98%; }
   .line:nth-child(3) {
-    width: 100%; }
+    width: 99%; }
   .line:nth-child(4) {
-    width: 100%; }
+    width: 96%; }
   .line:nth-child(5) {
-    width: 100%; }
+    width: 98%; }
   .line:nth-child(6) {
-    width: 100%; }
+    width: 96%; }
   .line:nth-child(7) {
-    width: 97%; }
+    width: 98%; }
   .line:nth-child(8) {
-    width: 97%; }
+    width: 100%; }
   .line:nth-child(9) {
-    width: 97%; }
+    width: 99%; }
   .line:nth-child(10) {
     width: 98%; }
   .line:last-of-type {
-    width: 95%;
+    width: 62%;
     margin-bottom: 1em; }
 
 .background {
@@ -486,10 +486,8 @@ footer {
     clear: both;
     display: table; }
 
-.color-examples {
-  margin: 50px 0; }
-  .color-examples > div {
-    margin: 20px 0; }
+.color-examples > div {
+  margin: 20px 0; }
 
 .color {
   width: 32px;
@@ -497,7 +495,9 @@ footer {
   border-radius: 2px;
   display: inline-block;
   vertical-align: middle;
-  margin: 0 10px; }
+  margin: 0 10px;
+  background-color: #666;
+  cursor: pointer; }
   .color.color-success {
     background-color: #8BC34A; }
   .color.color-warning {

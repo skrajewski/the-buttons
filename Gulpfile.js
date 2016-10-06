@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var nunjucks = require('gulp-nunjucks');
 var browserSync = require('browser-sync').create();
+var babel = require('gulp-babel');
 
 gulp.task('style', function () {
     return gulp.src('./scss/style.scss')
@@ -11,7 +12,7 @@ gulp.task('style', function () {
         .pipe(browserSync.stream());
 });
 
-gulp.task('watch', ['style', 'build'], function () {
+gulp.task('watch', ['style', 'scripts'], function () {
     browserSync.init({
         server: {
             baseDir: "./public"
@@ -19,12 +20,14 @@ gulp.task('watch', ['style', 'build'], function () {
     });
 
     gulp.watch('./scss/**/*.scss', ['style']);
-    gulp.watch('./build/**/*.html', ['build']);
-    gulp.watch("./public/*.html").on('change', browserSync.reload);
+    gulp.watch('./public/**/*.html').on('change', browserSync.reload);
+    gulp.watch('./build/js/*.js', ['scripts']).on('change', browserSync.reload);;
 });
 
-gulp.task('build', function () {
-    return gulp.src('./build/*.html')
-        .pipe(nunjucks.compile({}))
-        .pipe(gulp.dest('./public/'));
-})
+gulp.task('scripts', function () {
+    gulp.src('./build/js/*.js')
+        .pipe(babel({
+            presets: ['es2015']
+        }))
+        .pipe(gulp.dest('./public/js'));
+});
