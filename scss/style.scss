@@ -3,6 +3,7 @@
 @import "intro";
 @import "grid";
 @import "helpers";
+@import "color-blindness";
 
 body {
     margin: 0;
@@ -13,10 +14,27 @@ body {
     color: #444;
 }
 
-
-
 .text {
     line-height: 1.5;
+}
+
+.header-bar-menu {
+    text-align: right;
+    padding: 0.2em 0;
+    font-size: 0.95em;
+
+    label {
+        margin-right: 10px;
+    }
+}
+
+select {
+    border: 1px solid #F3F3F3;
+    background: none;
+    padding: 3px;
+    border-radius: 0.1em;
+    display: inline-block;
+    // -webkit-appearance :none;
 }
 
 footer {
@@ -222,8 +240,4 @@ pre {
     strong {
         color: #fff;
     }
-}
-
-.blind {
-    filter: url('css/filters.svg#protanopia');
 }

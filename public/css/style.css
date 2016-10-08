@@ -354,6 +354,30 @@
 .center {
   text-align: center; }
 
+.filter-protanopia {
+  filter: url("css/filters.svg#protanopia"); }
+
+.filter-protanomaly {
+  filter: url("css/filters.svg#protanomaly"); }
+
+.filter-deuteranopia {
+  filter: url("css/filters.svg#deuteranopia"); }
+
+.filter-deuteranomaly {
+  filter: url("css/filters.svg#deuteranomaly"); }
+
+.filter-tritanopia {
+  filter: url("css/filters.svg#tritanopia"); }
+
+.filter-tritanomaly {
+  filter: url("css/filters.svg#tritanomaly"); }
+
+.filter-achromatopsia {
+  filter: url("css/filters.svg#achromatopsia"); }
+
+.filter-achromatomaly {
+  filter: url("css/filters.svg#achromatomaly"); }
+
 body {
   margin: 0;
   background-color: #fff;
@@ -364,6 +388,20 @@ body {
 
 .text {
   line-height: 1.5; }
+
+.header-bar-menu {
+  text-align: right;
+  padding: 0.2em 0;
+  font-size: 0.95em; }
+  .header-bar-menu label {
+    margin-right: 10px; }
+
+select {
+  border: 1px solid #F3F3F3;
+  background: none;
+  padding: 3px;
+  border-radius: 0.1em;
+  display: inline-block; }
 
 footer {
   background-color: #333;
@@ -420,27 +458,27 @@ footer {
   background-color: #666;
   margin: 10px 0; }
   .line:nth-child(1) {
-    width: 96%; }
+    width: 97%; }
   .line:nth-child(2) {
-    width: 96%; }
-  .line:nth-child(3) {
     width: 98%; }
+  .line:nth-child(3) {
+    width: 97%; }
   .line:nth-child(4) {
-    width: 99%; }
+    width: 100%; }
   .line:nth-child(5) {
-    width: 99%; }
+    width: 100%; }
   .line:nth-child(6) {
-    width: 99%; }
+    width: 97%; }
   .line:nth-child(7) {
     width: 100%; }
   .line:nth-child(8) {
     width: 97%; }
   .line:nth-child(9) {
-    width: 96%; }
+    width: 97%; }
   .line:nth-child(10) {
-    width: 96%; }
+    width: 99%; }
   .line:last-of-type {
-    width: 91%;
+    width: 46%;
     margin-bottom: 1em; }
 
 .background {
@@ -523,6 +561,3 @@ pre {
   border-radius: 3px; }
   pre strong {
     color: #fff; }
-
-.blind {
-  filter: url("css/filters.svg#protanopia"); }

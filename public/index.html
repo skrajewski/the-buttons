@@ -12,7 +12,23 @@
         <script src="js/main.js"></script>
     </head>
 
-    <body ng-app="app">
+    <body ng-app="app" ng-init="colorBlindness = '';" ng-class="colorBlindness">
+        <section class="header-bar-menu">
+            <div class="container">
+                <label for="colorBlindnessType">Color blindness emulation</label>
+                <select ng-model="colorBlindness" id="colorBlindnessType">
+                    <option value="">None</option>
+                    <option value="filter-protonopia">Protanopia</option>
+                    <option value="filter-protanomaly">Protanomaly</option>
+                    <option value="filter-deuteranopia">Deuteranopia</option>
+                    <option value="filter-deuteranomaly">Deuteranomaly</option>
+                    <option value="filter-tritanopia">Tritanopia</option>
+                    <option value="filter-tritanomaly">Tritanomaly</option>
+                    <option value="filter-achromatopsia">Achromatopsia</option>
+                    <option value="filter-achromatomaly">Achromatomaly</option>
+                </select>
+            </div>
+        </section>
         <ng-include src="'partials/_header.html'"></ng-include>
         <div ui-view></div>
         <ng-include src="'partials/_footer.html'"></ng-include>

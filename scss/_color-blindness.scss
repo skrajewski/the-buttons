@@ -1,0 +1,7 @@
+$colorBlindnessTypes: protanopia protanomaly deuteranopia deuteranomaly tritanopia tritanomaly achromatopsia achromatomaly;
+
+@each $type in $colorBlindnessTypes {
+    .filter-#{$type} {
+        filter: url('css/filters.svg##{$type}');
+    }
+}
