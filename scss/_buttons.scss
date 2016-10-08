@@ -29,7 +29,7 @@
         background-color: $color;
         border-color: darken($color, 3%);
         color: #fff;
-        text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+        text-shadow: 0 1px 0 rgba(0,0,0,0.15);
 
         &:hover {
             background-color: darken($color, 5%);

@@ -47,13 +47,22 @@
     </section>
 
     <section class="showcase-section">
-        <h1 class="section-title">Disabled buttons</h1>
+        <div class="row">
+            <div class="col v-center">
+                <h1 class="section-title">Disabled buttons</h1>
+            </div>
+
+            <div class="col v-center" style="text-align: right;" ng-init="disabledState = true">
+                <button class="button button-success" ng-click="disabledState = false" ng-disabled="disabledState == false">Enable</button>
+                <button class="button button-danger" ng-click="disabledState = true" ng-disabled="disabledState == true">Disable</button>
+            </div>
+        </div>
 
         <div class="demo-section">
             <div class="row">
-                <div class="col v-center h-center"><button disabled class="button button-danger">Disabled normal</button></div>
-                <div class="col v-center h-center"><button disabled class="button button-danger button-filled">Disabled filled</button></div>
-                <div class="col v-center h-center"><button disabled class="button button-danger button-light">Disabled light</button></div>
+                <div class="col v-center h-center"><button ng-disabled="disabledState" class="button button-danger">Disabled normal</button></div>
+                <div class="col v-center h-center"><button ng-disabled="disabledState" class="button button-danger button-filled">Disabled filled</button></div>
+                <div class="col v-center h-center"><button ng-disabled="disabledState" class="button button-danger button-light">Disabled light</button></div>
             </div>
         </div>
     </section>

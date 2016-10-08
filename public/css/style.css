@@ -36,7 +36,7 @@
     background-color: #666;
     border-color: #5e5e5e;
     color: #fff;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
     .button.button-filled:hover {
       background-color: #595959;
       border-color: #595959; }
@@ -118,7 +118,7 @@
     background-color: #8BC34A;
     border-color: #84bf3f;
     color: #fff;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
     .button-success.button-filled:hover {
       background-color: #7eb73d;
       border-color: #7eb73d; }
@@ -165,7 +165,7 @@
     background-color: #FF9800;
     border-color: #f08f00;
     color: #fff;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
     .button-warning.button-filled:hover {
       background-color: #e68900;
       border-color: #e68900; }
@@ -212,7 +212,7 @@
     background-color: #f44336;
     border-color: #f33527;
     color: #fff;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
     .button-danger.button-filled:hover {
       background-color: #f32c1e;
       border-color: #f32c1e; }
@@ -259,7 +259,7 @@
     background-color: #2196F3;
     border-color: #128ff2;
     color: #fff;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
     .button-secondary.button-filled:hover {
       background-color: #0d8aee;
       border-color: #0d8aee; }
@@ -420,27 +420,27 @@ footer {
   background-color: #666;
   margin: 10px 0; }
   .line:nth-child(1) {
-    width: 97%; }
-  .line:nth-child(2) {
-    width: 99%; }
-  .line:nth-child(3) {
     width: 96%; }
+  .line:nth-child(2) {
+    width: 96%; }
+  .line:nth-child(3) {
+    width: 98%; }
   .line:nth-child(4) {
     width: 99%; }
   .line:nth-child(5) {
-    width: 98%; }
+    width: 99%; }
   .line:nth-child(6) {
-    width: 98%; }
+    width: 99%; }
   .line:nth-child(7) {
-    width: 96%; }
-  .line:nth-child(8) {
     width: 100%; }
+  .line:nth-child(8) {
+    width: 97%; }
   .line:nth-child(9) {
     width: 96%; }
   .line:nth-child(10) {
-    width: 100%; }
+    width: 96%; }
   .line:last-of-type {
-    width: 35%;
+    width: 91%;
     margin-bottom: 1em; }
 
 .background {
