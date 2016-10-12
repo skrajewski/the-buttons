@@ -12,9 +12,12 @@
         <script src="js/main.js"></script>
     </head>
 
-    <body ng-app="app" ng-init="colorBlindness = '';" class="">
+    <body ng-app="app" ng-init="colorBlindness = ''; a11y = false;" ng-class="{a11y: a11y}">
         <section class="header-bar-menu" ng-class="colorBlindness">
             <div class="container">
+                <label>
+                    <input type="checkbox" ng-model="a11y"> Accessibility mode
+                </label>
                 <label for="colorBlindnessType">Color blindness emulation</label>
                 <select ng-model="colorBlindness" id="colorBlindnessType">
                     <option value="">None</option>
