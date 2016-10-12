@@ -60,42 +60,7 @@
       box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3); }
     .button.button-light:disabled {
       background-color: rgba(102, 102, 102, 0.05); }
-  .button .fa {
-    line-height: 0.95em; }
 
-.button-icon {
-  padding: 0.76em 0.76em; }
-  .button-icon i {
-    font-size: 0.99em; }
-
-/* size */
-.button-large {
-  font-size: 0.95em; }
-
-.button-small {
-  font-size: 0.55em; }
-
-/* thickness */
-.button-thin {
-  padding-top: 0.47em;
-  padding-bottom: 0.47em; }
-
-.button-fat {
-  padding: 1.23em 1.24em; }
-
-/* radius */
-.button-sharp {
-  border-radius: 1px; }
-
-.button-rounded {
-  border-radius: 0.4em; }
-
-/* display */
-.button-block {
-  display: block;
-  width: 100%; }
-
-/* variants */
 .button-success {
   border-color: #8BC34A;
   color: #8BC34A; }
@@ -310,34 +275,73 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
 
+.button-icon {
+  padding: 0.76em 0.76em; }
+  .button-icon i {
+    font-size: 0.99em; }
+  .button-icon .fa {
+    line-height: 0.95em; }
+
 .a11y .button-success {
   background: repeating-linear-gradient(-45deg, transparent 0, rgba(139, 195, 74, 0.25) 1px, rgba(139, 195, 74, 0.25) 0.25em, transparent calc(.25em + 1px), transparent 0.75em); }
   .a11y .button-success.button-filled {
-    background: repeating-linear-gradient(-45deg, transparent 0, rgba(255, 255, 255, 0.25) 1px, rgba(255, 255, 255, 0.25) 0.25em, transparent calc(.25em + 1px), transparent 0.75em), #8BC34A; }
+    background: repeating-linear-gradient(-45deg, transparent 0, rgba(255, 255, 255, 0.25) 1px, rgba(255, 255, 255, 0.25) 0.25em, transparent calc(.25em + 1px), transparent 0.75em);
+    background-color: #8BC34A; }
 
 .a11y .button-warning {
   background: linear-gradient(135deg, rgba(255, 152, 0, 0.15) 0.25em, transparent 0);
   background-repeat: repeat;
   background-size: 0.53033em 0.53033em; }
   .a11y .button-warning.button-filled {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.35) 0.25em, transparent 0), #FF9800;
-    background-size: 0.53033em 0.53033em; }
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0.25em, transparent 0);
+    background-repeat: repeat;
+    background-size: 0.53033em 0.53033em;
+    background-color: #FF9800; }
 
 .a11y .button-danger {
   background: linear-gradient(135deg, rgba(244, 67, 54, 0.25) 25%, transparent 25%) -50px 0, linear-gradient(225deg, rgba(244, 67, 54, 0.25) 25%, transparent 25%) -50px 0, linear-gradient(315deg, rgba(244, 67, 54, 0.25) 25%, transparent 25%), linear-gradient(45deg, rgba(244, 67, 54, 0.25) 25%, transparent 25%);
   background-size: 1.414em 1.414em;
   background-position: -25px -25px; }
   .a11y .button-danger.button-filled {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%) -50px 0, linear-gradient(225deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%) -50px 0, linear-gradient(315deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%), #f44336;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%) -50px 0, linear-gradient(225deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%) -50px 0, linear-gradient(315deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%);
     background-size: 1.414em 1.414em;
-    background-position: -25px -25px; }
+    background-position: -25px -25px;
+    background-color: #f44336; }
 
 .a11y .button-secondary {
   background: radial-gradient(circle at 0% 50%, transparent 9px, rgba(33, 150, 243, 0.25) 10px, transparent 11px) 0px 10px, radial-gradient(at 100% 100%, transparent 9px, rgba(33, 150, 243, 0.25) 10px, transparent 11px);
   background-size: 20px 20px; }
   .a11y .button-secondary.button-filled {
-    background: radial-gradient(circle at 0% 50%, transparent 9px, rgba(255, 255, 255, 0.25) 10px, transparent 11px) 0px 10px, radial-gradient(at 100% 100%, transparent 9px, rgba(255, 255, 255, 0.25) 10px, transparent 11px), #2196F3;
-    background-size: 20px 20px; }
+    background: radial-gradient(circle at 0% 50%, transparent 9px, rgba(255, 255, 255, 0.25) 10px, transparent 11px) 0px 10px, radial-gradient(at 100% 100%, transparent 9px, rgba(255, 255, 255, 0.25) 10px, transparent 11px);
+    background-size: 20px 20px;
+    background-color: #2196F3; }
+
+/* size */
+.button-large {
+  font-size: 0.95em; }
+
+.button-small {
+  font-size: 0.55em; }
+
+/* thickness */
+.button-thin {
+  padding-top: 0.47em;
+  padding-bottom: 0.47em; }
+
+.button-fat {
+  padding: 1.23em 1.24em; }
+
+/* radius */
+.button-sharp {
+  border-radius: 1px; }
+
+.button-rounded {
+  border-radius: 0.4em; }
+
+/* display */
+.button-block {
+  display: block;
+  width: 100%; }
 
 #intro {
   padding: 30px;
@@ -492,27 +496,27 @@ footer {
   background-color: #666;
   margin: 10px 0; }
   .line:nth-child(1) {
-    width: 99%; }
+    width: 96%; }
   .line:nth-child(2) {
-    width: 97%; }
+    width: 96%; }
   .line:nth-child(3) {
-    width: 98%; }
+    width: 96%; }
   .line:nth-child(4) {
-    width: 98%; }
+    width: 100%; }
   .line:nth-child(5) {
-    width: 97%; }
+    width: 99%; }
   .line:nth-child(6) {
-    width: 98%; }
+    width: 97%; }
   .line:nth-child(7) {
     width: 100%; }
   .line:nth-child(8) {
-    width: 100%; }
+    width: 96%; }
   .line:nth-child(9) {
-    width: 98%; }
+    width: 99%; }
   .line:nth-child(10) {
-    width: 98%; }
+    width: 96%; }
   .line:last-of-type {
-    width: 44%;
+    width: 57%;
     margin-bottom: 1em; }
 
 .background {

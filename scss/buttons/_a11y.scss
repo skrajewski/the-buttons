@@ -1,0 +1,39 @@
+@import "accessibility";
+
+.a11y {
+    .button-success {
+        @include a11y-lines(fade-out($colorSuccess, 0.75));
+
+        &.button-filled {
+            @include a11y-lines(fade-out(#fff, 0.75));
+            background-color: $colorSuccess;
+        }
+    }
+
+    .button-warning {
+        @include a11y-triangles(fade-out($colorWarning, 0.85));
+
+        &.button-filled {
+            @include a11y-triangles(fade-out(#fff, 0.85));
+            background-color: $colorWarning;
+        }
+    }
+
+    .button-danger {
+        @include a11y-squares(fade-out($colorDanger, 0.75));
+
+        &.button-filled {
+            @include a11y-squares(fade-out(#fff, 0.75));
+            background-color: $colorDanger;
+        }
+    }
+
+    .button-secondary {
+        @include a11y-circles(fade-out($colorSecondary, 0.75));
+
+        &.button-filled {
+            @include a11y-circles(fade-out(#fff, 0.75));
+            background-color: $colorSecondary;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import "mixins";
+
+.button-success {
+    @include button-variant($colorSuccess);
+}
+
+.button-warning {
+    @include button-variant($colorWarning);
+}
+
+.button-danger {
+    @include button-variant($colorDanger);
+}
+
+.button-secondary {
+    @include button-variant($colorSecondary);
+}

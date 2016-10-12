@@ -1,0 +1,39 @@
+.button-merged {
+    display: inline-block;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px -2px fade-out(#000, 0.8);
+
+    .button {
+        display: table-cell;
+        display: inline;
+        box-shadow: none;
+        margin-right: -0.25rem;
+
+        &:focus {
+            box-shadow: inset 0 0 7px fade-out(#000, 0.8);
+        }
+    }
+
+    .button:first-child:not(:last-child) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: 0;
+    }
+
+    .button:last-child:not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .button + .button:not(:last-child) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: 0;
+    }
+
+    .button + .button {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+}

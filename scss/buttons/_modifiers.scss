@@ -1,0 +1,33 @@
+/* size */
+.button-large {
+    font-size: $buttonBaseSize + 0.2em;
+}
+
+.button-small {
+    font-size: $buttonBaseSize - 0.2em;
+}
+
+/* thickness */
+.button-thin {
+    padding-top: 0.47em;
+    padding-bottom: 0.47em;
+}
+
+.button-fat {
+    padding: 1.23em 1.24em;
+}
+
+/* radius */
+.button-sharp {
+    border-radius: 1px;
+}
+
+.button-rounded {
+    border-radius: 0.4em;
+}
+
+/* display */
+.button-block {
+    display: block;
+    width: 100%;
+}
