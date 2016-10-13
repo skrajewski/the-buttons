@@ -31,9 +31,21 @@ body {
     border-bottom: 3px solid #0c82df;
     z-index: 1;
     box-shadow: 0 0 5px fade-out(#000, 0.5);
+    font-size: 0.75em;
+    text-transform: uppercase;
+
+    > div {
+        padding-top: 0.35em;
+    }
 
     label {
         margin-right: 10px;
+    }
+
+    .pipe::after {
+        content: '|';
+        color: #d3d3d3;
+        margin: 0 10px;
     }
 }
 

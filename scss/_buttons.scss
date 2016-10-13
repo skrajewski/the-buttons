@@ -14,7 +14,7 @@
     font-size: $buttonBaseSize;
     line-height: 1em;
     transition: background 0.12s ease-in-out;
-    transition-property: background, box-shadow, transform, background-color;
+    transition-property: background-image, box-shadow, transform, background-color;
     box-shadow: 0 4px 6px -2px fade-out(#000, 0.8);
     box-sizing: border-box;
     display: inline-block;
