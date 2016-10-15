@@ -1,0 +1,49 @@
+<section id="intro">
+    <div class="container">
+        <p>Playground</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div id="scene" class="scene" style="font-size: 1.5em;">
+                <button class="button" ng-click="PC.randomize()" ng-class="[PC.type, PC.variant, PC.size, PC.thickness, PC.rounding]" ng-disabled="PC.disabled">Randomize</button>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="form-group">
+                <label for="type">Type</label>
+                <select id="type" class="form-control" ng-model="PC.type" ng-options="k as v for (v, k) in PC.types"></select>
+            </div>
+
+            <div class="form-group">
+                <label for="variant">Variant</label>
+                <select id="variant" class="form-control" ng-model="PC.variant" ng-options="k as v for (v, k) in PC.variants"></select>
+            </div>
+
+            <div class="form-group">
+                <label for="size">Size</label>
+                <select id="size" class="form-control" ng-model="PC.size" ng-options="k as v for (v, k) in PC.sizes"></select>
+            </div>
+
+            <div class="form-group">
+                <label for="thickness">Thickness</label>
+                <select id="thickness" class="form-control" ng-model="PC.thickness" ng-options="k as v for (v, k) in PC.thicknesses"></select>
+            </div>
+
+            <div class="form-group">
+                <label for="rounding">Rounding</label>
+                <select id="rounding" class="form-control" ng-model="PC.rounding" ng-options="k as v for (v, k) in PC.roundings"></select>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" ng-model="PC.disabled"> Disabled
+                </label>
+            </div>
+        </div>
+    </div>
+
+</div>
