@@ -442,6 +442,60 @@
   -webkit-filter: url("css/filters.svg#achromatomaly");
           filter: url("css/filters.svg#achromatomaly"); }
 
+.color-list {
+  list-style: none;
+  display: inline-block;
+  text-align: center; }
+  .color-list li {
+    margin: 5px 20px;
+    float: left; }
+  .color-list::after {
+    content: '';
+    clear: both;
+    display: table; }
+
+.color-examples > div {
+  margin: 20px 0; }
+
+.color {
+  width: 32px;
+  height: 32px;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+  background-color: #666;
+  cursor: pointer; }
+  .color.color-success {
+    background-color: #8BC34A; }
+    .a11y .color.color-success {
+      background: -webkit-repeating-linear-gradient(135deg, transparent 0, rgba(255, 255, 255, 0.25) 1px, rgba(255, 255, 255, 0.25) 0.25em, transparent calc(.25em + 1px), transparent 0.75em);
+      background: repeating-linear-gradient(-45deg, transparent 0, rgba(255, 255, 255, 0.25) 1px, rgba(255, 255, 255, 0.25) 0.25em, transparent calc(.25em + 1px), transparent 0.75em);
+      background-color: #8BC34A; }
+  .color.color-warning {
+    background-color: #FF9800; }
+    .a11y .color.color-warning {
+      background: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0.15) 0.25em, transparent 0);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0.25em, transparent 0);
+      background-repeat: repeat;
+      background-size: 0.53033em 0.53033em;
+      background-color: #FF9800; }
+  .color.color-danger {
+    background-color: #f44336; }
+    .a11y .color.color-danger {
+      background: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%) -50px 0, -webkit-linear-gradient(225deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%) -50px 0, -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%), -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%) -50px 0, linear-gradient(225deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%) -50px 0, linear-gradient(315deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%);
+      background-size: 1.414em 1.414em;
+      background-position: -25px -25px;
+      background-color: #f44336; }
+  .color.color-secondary {
+    background-color: #2196F3; }
+    .a11y .color.color-secondary {
+      background: -webkit-radial-gradient(0% 50% circle, transparent 9px, rgba(255, 255, 255, 0.25) 10px, transparent 11px) 0px 10px, -webkit-radial-gradient(at 100% 100%, transparent 9px, rgba(255, 255, 255, 0.25) 10px, transparent 11px);
+      background: radial-gradient(circle at 0% 50%, transparent 9px, rgba(255, 255, 255, 0.25) 10px, transparent 11px) 0px 10px, radial-gradient(at 100% 100%, transparent 9px, rgba(255, 255, 255, 0.25) 10px, transparent 11px);
+      background-size: 20px 20px;
+      background-color: #2196F3; }
+
 * {
   box-sizing: border-box; }
 
@@ -478,13 +532,6 @@ body {
     content: '|';
     color: #d3d3d3;
     margin: 0 10px; }
-
-select {
-  border: 1px solid #F3F3F3;
-  background: none;
-  padding: 3px;
-  border-radius: 0.1em;
-  display: inline-block; }
 
 footer {
   background-color: #333;
@@ -551,25 +598,25 @@ footer {
   .line:nth-child(1) {
     width: 100%; }
   .line:nth-child(2) {
-    width: 96%; }
-  .line:nth-child(3) {
-    width: 100%; }
-  .line:nth-child(4) {
     width: 99%; }
-  .line:nth-child(5) {
+  .line:nth-child(3) {
+    width: 96%; }
+  .line:nth-child(4) {
     width: 98%; }
+  .line:nth-child(5) {
+    width: 99%; }
   .line:nth-child(6) {
     width: 98%; }
   .line:nth-child(7) {
     width: 100%; }
   .line:nth-child(8) {
-    width: 100%; }
+    width: 99%; }
   .line:nth-child(9) {
-    width: 100%; }
+    width: 99%; }
   .line:nth-child(10) {
-    width: 96%; }
+    width: 97%; }
   .line:last-of-type {
-    width: 39%;
+    width: 82%;
     margin-bottom: 1em; }
 
 .background {
@@ -607,39 +654,6 @@ footer {
   .my-thought p {
     color: #777;
     font-size: 0.9em; }
-
-.color-list {
-  list-style: none;
-  display: inline-block;
-  text-align: center; }
-  .color-list li {
-    margin: 5px 20px;
-    float: left; }
-  .color-list::after {
-    content: '';
-    clear: both;
-    display: table; }
-
-.color-examples > div {
-  margin: 20px 0; }
-
-.color {
-  width: 32px;
-  height: 32px;
-  border-radius: 2px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 10px;
-  background-color: #666;
-  cursor: pointer; }
-  .color.color-success {
-    background-color: #8BC34A; }
-  .color.color-warning {
-    background-color: #FF9800; }
-  .color.color-danger {
-    background-color: #f44336; }
-  .color.color-secondary {
-    background-color: #2196F3; }
 
 pre {
   background-color: #444444;

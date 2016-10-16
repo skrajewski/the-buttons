@@ -1,0 +1,70 @@
+.color-list {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+
+    li {
+        margin: 5px 20px;
+        float: left;
+    }
+
+    &::after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
+
+.color-examples {
+    // margin: 50px 0;
+    > div {
+        margin: 20px 0;
+    }
+}
+
+.color {
+    width: 32px;
+    height: 32px;
+    border-radius: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+    background-color: $colorDefault;
+    cursor: pointer;
+
+    &.color-success {
+        background-color: $colorSuccess;
+
+        .a11y & {
+            @include a11y-lines(fade-out(#fff, 0.75));
+            background-color: $colorSuccess;
+        }
+    }
+
+    &.color-warning {
+        background-color: $colorWarning;
+
+        .a11y & {
+            @include a11y-triangles(fade-out(#fff, 0.85));
+            background-color: $colorWarning;
+        }
+    }
+
+    &.color-danger {
+        background-color: $colorDanger;
+
+        .a11y & {
+            @include a11y-squares(fade-out(#fff, 0.75));
+            background-color: $colorDanger;
+        }
+    }
+
+    &.color-secondary {
+        background-color: $colorSecondary;
+
+        .a11y & {
+            @include a11y-circles(fade-out(#fff, 0.75));
+            background-color: $colorSecondary;
+        }
+    }
+}

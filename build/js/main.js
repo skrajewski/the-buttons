@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ui.router']);
+const app = angular.module('app', ['ui.router']);
 
 app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
     $stateProvider
@@ -19,23 +19,8 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
     $urlRouterProvider.otherwise('/');
 }]);
 
-app.controller('PlaygroundController', ['$scope', function ($scope) {
-    var randomProperty = function (obj) {
-        var keys = Object.keys(obj)
-        return obj[keys[ keys.length * Math.random() << 0]];
-    };
-
-    this.randomize = function () {
-        this.type = randomProperty(this.types);
-        this.variant = randomProperty(this.variants);
-        this.size = randomProperty(this.sizes);
-        this.thickness = randomProperty(this.thicknesses);
-        this.rounding = randomProperty(this.roundings);
-        this.text = this.texts[this.texts.length * Math.random() << 0];
-        this.block = Math.random() > 0.75;
-    };
-
-    this.texts = [
+app.controller('PlaygroundController', function () {
+    const texts = [
         'Click',
         'Bonjour!',
         'Hello',
@@ -56,6 +41,21 @@ app.controller('PlaygroundController', ['$scope', function ($scope) {
         'See more',
         'Read more'
     ];
+
+    const randomProperty = function (obj) {
+        var keys = Object.keys(obj)
+        return obj[keys[keys.length * Math.random() << 0]];
+    };
+
+    this.randomize = function () {
+        this.type = randomProperty(this.types);
+        this.variant = randomProperty(this.variants);
+        this.size = randomProperty(this.sizes);
+        this.thickness = randomProperty(this.thicknesses);
+        this.rounding = randomProperty(this.roundings);
+        this.text = texts[texts.length * Math.random() << 0];
+        this.block = Math.random() > 0.75;
+    };
 
     this.types = {
         "Default": "",
@@ -93,4 +93,4 @@ app.controller('PlaygroundController', ['$scope', function ($scope) {
     this.block = false;
 
     this.randomize();
-}]);
+});

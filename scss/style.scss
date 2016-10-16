@@ -4,6 +4,7 @@
 @import "grid";
 @import "helpers";
 @import "color-blindness";
+@import "color-list";
 
 * {
     box-sizing: border-box;
@@ -52,13 +53,13 @@ body {
     }
 }
 
-select {
-    border: 1px solid #F3F3F3;
-    background: none;
-    padding: 3px;
-    border-radius: 0.1em;
-    display: inline-block;
-}
+// select {
+//     border: 1px solid #F3F3F3;
+//     background: none;
+//     padding: 3px;
+//     border-radius: 0.1em;
+//     display: inline-block;
+// }
 
 footer {
     background-color: #333;
@@ -189,56 +190,7 @@ footer {
     }
 }
 
-.color-list {
-    list-style: none;
-    display: inline-block;
-    text-align: center;
 
-    li {
-        margin: 5px 20px;
-        float: left;
-    }
-
-    &::after {
-        content: '';
-        clear: both;
-        display: table;
-    }
-}
-
-.color-examples {
-    // margin: 50px 0;
-    > div {
-        margin: 20px 0;
-    }
-}
-
-.color {
-    width: 32px;
-    height: 32px;
-    border-radius: 2px;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 10px;
-    background-color: $colorDefault;
-    cursor: pointer;
-
-    &.color-success {
-        background-color: $colorSuccess;
-    }
-
-    &.color-warning {
-        background-color: $colorWarning;
-    }
-
-    &.color-danger {
-        background-color: $colorDanger;
-    }
-
-    &.color-secondary {
-        background-color: $colorSecondary;
-    }
-}
 
 pre {
     // white-space: pre-line;
