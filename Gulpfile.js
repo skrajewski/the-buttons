@@ -10,14 +10,14 @@ gulp.task('style', function () {
     return gulp.src('./scss/style.scss')
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(autoprefixer())
-        .pipe(gulp.dest('./public/css'))
+        .pipe(gulp.dest('./docs/css'))
         .pipe(browserSync.stream());
 });
 
 gulp.task('watch', ['style', 'scripts'], function () {
     browserSync.init({
         server: {
-            baseDir: "./public"
+            baseDir: "./docs"
         }
     });
 
@@ -31,5 +31,5 @@ gulp.task('scripts', function () {
         .pipe(babel({
             presets: ['es2015']
         }))
-        .pipe(gulp.dest('./public/js'));
+        .pipe(gulp.dest('./docs/js'));
 });
