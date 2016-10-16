@@ -5,6 +5,10 @@
 @import "helpers";
 @import "color-blindness";
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color: #fff;
@@ -24,7 +28,6 @@ body {
     padding: 0.2em 0;
     font-size: 0.95em;
     position: fixed;
-    height: 25px;
     width: 100%;
     background-color: #fff;
     top: 0;
@@ -55,7 +58,6 @@ select {
     padding: 3px;
     border-radius: 0.1em;
     display: inline-block;
-    // -webkit-appearance :none;
 }
 
 footer {
@@ -159,10 +161,6 @@ footer {
         font-weight: 300;
         font-size: 2em;
         margin: 0.5em 0;
-    }
-
-    p {
-        // margin: 0;
     }
 
     &:first-of-type {

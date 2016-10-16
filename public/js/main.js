@@ -8,8 +8,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         templateUrl: 'views/home.html'
     }).state('explore', {
         url: '/explore',
-        templateUrl: 'views/explore.html',
-        controller: 'ExploreController'
+        templateUrl: 'views/explore.html'
     }).state('playground', {
         url: '/playground',
         templateUrl: 'views/playground.html',
@@ -18,8 +17,6 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
 
     $urlRouterProvider.otherwise('/');
 }]);
-
-app.controller('ExploreController', ['$scope', function ($scope) {}]);
 
 app.controller('PlaygroundController', ['$scope', function ($scope) {
     var randomProperty = function randomProperty(obj) {
@@ -33,7 +30,11 @@ app.controller('PlaygroundController', ['$scope', function ($scope) {
         this.size = randomProperty(this.sizes);
         this.thickness = randomProperty(this.thicknesses);
         this.rounding = randomProperty(this.roundings);
+        this.text = this.texts[this.texts.length * Math.random() << 0];
+        this.block = Math.random() > 0.75;
     };
+
+    this.texts = ['Click', 'Bonjour!', 'Hello', 'Gutten Tag!', 'Delete', 'Select', 'Add something', 'Buy', 'Play', 'Stop', 'Replay', 'Forward', 'Add to calendar', 'Next', 'Previous', 'Witaj', 'Welcome', 'See more', 'Read more'];
 
     this.types = {
         "Default": "",
@@ -68,6 +69,7 @@ app.controller('PlaygroundController', ['$scope', function ($scope) {
     };
 
     this.disabled = false;
+    this.block = false;
 
     this.randomize();
 }]);
