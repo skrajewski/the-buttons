@@ -37,9 +37,29 @@
         </section>
 
         <section ng-class="colorBlindness">
-            <ng-include src="'/partials/_header.html'"></ng-include>
+            <section class="header-bar"></section>
+
+            <section class="container">
+                <section class="row">
+                    <div class="col">
+                        <section class="title">
+                            Buttons
+                        </section>
+                    </div>
+
+                    <div class="col v-center" style="text-align: right;">
+                        <a class="button button-light" ui-sref="home">Home</a>
+                        <a class="button button-light" ui-sref="explore">Explore</a>
+                        <a class="button button-light" ui-sref="playground">Playground</a>
+                    </div>
+                </section>
+            </section>
+
             <div ui-view></div>
-            <ng-include src="'/partials/_footer.html'"></ng-include>
+
+            <footer>
+                Proudly made by <a href="http://skrajewski.pl/">Szymon Krajewski</a>.
+            </footer>
         </section>
     </body>
 </html>
