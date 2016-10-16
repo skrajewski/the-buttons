@@ -1,3 +1,20 @@
 .center {
     text-align: center;
 }
+
+.line {
+    height: 10px;
+    background-color: #666;
+    margin: 10px 0;
+
+    @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+            width: 95% + random(5);
+        }
+    }
+
+    &:last-of-type {
+        width: 30% + random(70);
+        margin-bottom: 1em;
+    }
+}

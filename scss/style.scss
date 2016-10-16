@@ -1,10 +1,11 @@
 @import "variables";
-@import "buttons";
+@import "buttons/buttons";
 @import "intro";
 @import "grid";
 @import "helpers";
 @import "color-blindness";
 @import "color-list";
+@import "form";
 
 * {
     box-sizing: border-box;
@@ -51,15 +52,15 @@ body {
         color: #d3d3d3;
         margin: 0 10px;
     }
-}
 
-// select {
-//     border: 1px solid #F3F3F3;
-//     background: none;
-//     padding: 3px;
-//     border-radius: 0.1em;
-//     display: inline-block;
-// }
+    select {
+        border: 1px solid #F3F3F3;
+        background: none;
+        padding: 3px;
+        border-radius: 0.1em;
+        display: inline-block;
+    }
+}
 
 footer {
     background-color: #333;
@@ -69,6 +70,11 @@ footer {
     font-size: 0.8em;
     text-shadow: 0 1px 0 rgba(0,0,0,0.2);
     box-shadow: 0 5px 10px -5px #000 inset;
+
+    a {
+        color: orange;
+        text-decoration: none;
+    }
 }
 
 .articles {
@@ -96,57 +102,14 @@ footer {
     }
 }
 
-.teaser {
-    display: flex;
-    align-items: center;
-
-    h1 {
-        font-size: 1.8em;
-        text-transform: uppercase;
-        font-weight: 300;
-        margin: 0;
-    }
-
-    div {
-        flex: 1;
-    }
-
-    div:last-child {
-        text-align: right;
-        flex: none;
-    }
-}
-
 .title {
     font-size: 2em;
     font-weight: 300;
     margin: 0.5em 0;
 }
 
-.line {
-    height: 10px;
-    background-color: #666;
-    margin: 10px 0;
-
-    @for $i from 1 through 10 {
-        &:nth-child(#{$i}) {
-            width: 95% + random(5);
-        }
-    }
-
-    &:last-of-type {
-        width: 30% + random(70);
-        margin-bottom: 1em;
-    }
-}
-
 .background {
     padding: 2em;
-}
-
-.background-inverse {
-    background-color: #333;
-    color: #fff;
 }
 
 .section-title {
@@ -169,17 +132,6 @@ footer {
     }
 }
 
-.table {
-    border: 1px solid #666;
-    border-collapse: collapse;
-
-    td {
-        border: 1px solid #666;
-        padding: 5px 10px;
-        min-width: 3em;
-    }
-}
-
 .my-thought {
     border-left: 5px solid #DDD;
     padding-left: 1em;
@@ -190,10 +142,7 @@ footer {
     }
 }
 
-
-
 pre {
-    // white-space: pre-line;
     background-color: #444444;
     color: #eee;
     padding: 1em;
@@ -213,23 +162,4 @@ pre {
     padding: 75px 30px;
     text-align: center;
     box-shadow: 0 0 1px fade-out(#000, 0.7);
-    // height: 100%;
-}
-
-.form-group {
-    margin-bottom: 15px;
-
-    label {
-        display: block;
-        text-transform: uppercase;
-        font-size: 0.8em;
-    }
-}
-
-.form-control {
-    display: block;
-    width: 100%;
-    padding: 5px 3px;
-    border-radius: 2px;
-    border: 1px solid #d3d3d3;
 }

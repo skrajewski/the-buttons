@@ -1,5 +1,5 @@
 @import "functions";
-@import "buttons/mixins";
+@import "mixins";
 
 .button {
     @include button-variant(#666);
@@ -21,8 +21,8 @@
     text-decoration: none;
 }
 
-@import "buttons/variants";
-@import "buttons/merged";
-@import "buttons/icon";
-@import "buttons/a11y";
-@import "buttons/modifiers";
+@import "variants";
+@import "merged";
+@import "icon";
+@import "a11y";
+@import "modifiers";
