@@ -11,8 +11,12 @@
   text-transform: uppercase;
   font-size: 0.75em;
   line-height: 1em;
+  -webkit-transition: background 0.12s ease-in-out;
   transition: background 0.12s ease-in-out;
+  -webkit-transition-property: background-image, box-shadow, background-color, -webkit-transform;
+  transition-property: background-image, box-shadow, background-color, -webkit-transform;
   transition-property: background-image, box-shadow, transform, background-color;
+  transition-property: background-image, box-shadow, transform, background-color, -webkit-transform;
   box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   display: inline-block;
@@ -22,7 +26,8 @@
   .button:active {
     background-color: rgba(87, 87, 87, 0.1);
     box-shadow: 0 4px 4px -3px rgba(0, 0, 0, 0.3);
-    transform: translateY(0.3px); }
+    -webkit-transform: translateY(0.3px);
+            transform: translateY(0.3px); }
   .button:focus {
     outline: none;
     box-shadow: 0 4px 4px -3px rgba(0, 0, 0, 0.5), 0 0 2px 1px #666; }
@@ -69,7 +74,8 @@
   .button-success:active {
     background-color: rgba(124, 179, 59, 0.1);
     box-shadow: 0 4px 4px -3px rgba(0, 0, 0, 0.3);
-    transform: translateY(0.3px); }
+    -webkit-transform: translateY(0.3px);
+            transform: translateY(0.3px); }
   .button-success:focus {
     outline: none;
     box-shadow: 0 4px 4px -3px rgba(0, 0, 0, 0.5), 0 0 2px 1px #8BC34A; }
@@ -116,7 +122,8 @@
   .button-warning:active {
     background-color: rgba(224, 134, 0, 0.1);
     box-shadow: 0 4px 4px -3px rgba(0, 0, 0, 0.3);
-    transform: translateY(0.3px); }
+    -webkit-transform: translateY(0.3px);
+            transform: translateY(0.3px); }
   .button-warning:focus {
     outline: none;
     box-shadow: 0 4px 4px -3px rgba(0, 0, 0, 0.5), 0 0 2px 1px #FF9800; }
@@ -163,7 +170,8 @@
   .button-danger:active {
     background-color: rgba(242, 40, 25, 0.1);
     box-shadow: 0 4px 4px -3px rgba(0, 0, 0, 0.3);
-    transform: translateY(0.3px); }
+    -webkit-transform: translateY(0.3px);
+            transform: translateY(0.3px); }
   .button-danger:focus {
     outline: none;
     box-shadow: 0 4px 4px -3px rgba(0, 0, 0, 0.5), 0 0 2px 1px #f44336; }
@@ -210,7 +218,8 @@
   .button-secondary:active {
     background-color: rgba(13, 135, 233, 0.1);
     box-shadow: 0 4px 4px -3px rgba(0, 0, 0, 0.3);
-    transform: translateY(0.3px); }
+    -webkit-transform: translateY(0.3px);
+            transform: translateY(0.3px); }
   .button-secondary:focus {
     outline: none;
     box-shadow: 0 4px 4px -3px rgba(0, 0, 0, 0.5), 0 0 2px 1px #2196F3; }
@@ -282,35 +291,43 @@
     line-height: 0.95em; }
 
 .a11y .button-success {
+  background: -webkit-repeating-linear-gradient(135deg, transparent 0, rgba(139, 195, 74, 0.25) 1px, rgba(139, 195, 74, 0.25) 0.25em, transparent calc(.25em + 1px), transparent 0.75em);
   background: repeating-linear-gradient(-45deg, transparent 0, rgba(139, 195, 74, 0.25) 1px, rgba(139, 195, 74, 0.25) 0.25em, transparent calc(.25em + 1px), transparent 0.75em); }
   .a11y .button-success.button-filled {
+    background: -webkit-repeating-linear-gradient(135deg, transparent 0, rgba(255, 255, 255, 0.25) 1px, rgba(255, 255, 255, 0.25) 0.25em, transparent calc(.25em + 1px), transparent 0.75em);
     background: repeating-linear-gradient(-45deg, transparent 0, rgba(255, 255, 255, 0.25) 1px, rgba(255, 255, 255, 0.25) 0.25em, transparent calc(.25em + 1px), transparent 0.75em);
     background-color: #8BC34A; }
 
 .a11y .button-warning {
+  background: -webkit-linear-gradient(315deg, rgba(255, 152, 0, 0.15) 0.25em, transparent 0);
   background: linear-gradient(135deg, rgba(255, 152, 0, 0.15) 0.25em, transparent 0);
   background-repeat: repeat;
   background-size: 0.53033em 0.53033em; }
   .a11y .button-warning.button-filled {
+    background: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0.15) 0.25em, transparent 0);
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0.25em, transparent 0);
     background-repeat: repeat;
     background-size: 0.53033em 0.53033em;
     background-color: #FF9800; }
 
 .a11y .button-danger {
+  background: -webkit-linear-gradient(315deg, rgba(244, 67, 54, 0.25) 25%, transparent 25%) -50px 0, -webkit-linear-gradient(225deg, rgba(244, 67, 54, 0.25) 25%, transparent 25%) -50px 0, -webkit-linear-gradient(135deg, rgba(244, 67, 54, 0.25) 25%, transparent 25%), -webkit-linear-gradient(45deg, rgba(244, 67, 54, 0.25) 25%, transparent 25%);
   background: linear-gradient(135deg, rgba(244, 67, 54, 0.25) 25%, transparent 25%) -50px 0, linear-gradient(225deg, rgba(244, 67, 54, 0.25) 25%, transparent 25%) -50px 0, linear-gradient(315deg, rgba(244, 67, 54, 0.25) 25%, transparent 25%), linear-gradient(45deg, rgba(244, 67, 54, 0.25) 25%, transparent 25%);
   background-size: 1.414em 1.414em;
   background-position: -25px -25px; }
   .a11y .button-danger.button-filled {
+    background: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%) -50px 0, -webkit-linear-gradient(225deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%) -50px 0, -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%), -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%);
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%) -50px 0, linear-gradient(225deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%) -50px 0, linear-gradient(315deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%);
     background-size: 1.414em 1.414em;
     background-position: -25px -25px;
     background-color: #f44336; }
 
 .a11y .button-secondary {
+  background: -webkit-radial-gradient(0% 50% circle, transparent 9px, rgba(33, 150, 243, 0.25) 10px, transparent 11px) 0px 10px, -webkit-radial-gradient(at 100% 100%, transparent 9px, rgba(33, 150, 243, 0.25) 10px, transparent 11px);
   background: radial-gradient(circle at 0% 50%, transparent 9px, rgba(33, 150, 243, 0.25) 10px, transparent 11px) 0px 10px, radial-gradient(at 100% 100%, transparent 9px, rgba(33, 150, 243, 0.25) 10px, transparent 11px);
   background-size: 20px 20px; }
   .a11y .button-secondary.button-filled {
+    background: -webkit-radial-gradient(0% 50% circle, transparent 9px, rgba(255, 255, 255, 0.25) 10px, transparent 11px) 0px 10px, -webkit-radial-gradient(at 100% 100%, transparent 9px, rgba(255, 255, 255, 0.25) 10px, transparent 11px);
     background: radial-gradient(circle at 0% 50%, transparent 9px, rgba(255, 255, 255, 0.25) 10px, transparent 11px) 0px 10px, radial-gradient(at 100% 100%, transparent 9px, rgba(255, 255, 255, 0.25) 10px, transparent 11px);
     background-size: 20px 20px;
     background-color: #2196F3; }
@@ -365,50 +382,65 @@
       height: 13px;
       background-color: rgba(51, 51, 51, 0.99);
       content: '';
-      transform: rotate(15deg); }
+      -webkit-transform: rotate(15deg);
+              transform: rotate(15deg); }
 
 .container {
   width: 750px;
   margin: 0 auto; }
 
 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 -15px; }
 
 .col {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 15px; }
   .col.h-center {
     text-align: center; }
   .col.v-center {
-    align-self: center; }
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
 
 .center {
   text-align: center; }
 
 .filter-protanopia {
-  filter: url("css/filters.svg#protanopia"); }
+  -webkit-filter: url("css/filters.svg#protanopia");
+          filter: url("css/filters.svg#protanopia"); }
 
 .filter-protanomaly {
-  filter: url("css/filters.svg#protanomaly"); }
+  -webkit-filter: url("css/filters.svg#protanomaly");
+          filter: url("css/filters.svg#protanomaly"); }
 
 .filter-deuteranopia {
-  filter: url("css/filters.svg#deuteranopia"); }
+  -webkit-filter: url("css/filters.svg#deuteranopia");
+          filter: url("css/filters.svg#deuteranopia"); }
 
 .filter-deuteranomaly {
-  filter: url("css/filters.svg#deuteranomaly"); }
+  -webkit-filter: url("css/filters.svg#deuteranomaly");
+          filter: url("css/filters.svg#deuteranomaly"); }
 
 .filter-tritanopia {
-  filter: url("css/filters.svg#tritanopia"); }
+  -webkit-filter: url("css/filters.svg#tritanopia");
+          filter: url("css/filters.svg#tritanopia"); }
 
 .filter-tritanomaly {
-  filter: url("css/filters.svg#tritanomaly"); }
+  -webkit-filter: url("css/filters.svg#tritanomaly");
+          filter: url("css/filters.svg#tritanomaly"); }
 
 .filter-achromatopsia {
-  filter: url("css/filters.svg#achromatopsia"); }
+  -webkit-filter: url("css/filters.svg#achromatopsia");
+          filter: url("css/filters.svg#achromatopsia"); }
 
 .filter-achromatomaly {
-  filter: url("css/filters.svg#achromatomaly"); }
+  -webkit-filter: url("css/filters.svg#achromatomaly");
+          filter: url("css/filters.svg#achromatomaly"); }
 
 * {
   box-sizing: border-box; }
@@ -464,12 +496,16 @@ footer {
   box-shadow: 0 5px 10px -5px #000 inset; }
 
 .articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 -15px;
   text-align: left;
   font-size: 1rem; }
   .articles article {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     margin: 15px; }
     .articles article.bordered {
       border: 1px solid #666;
@@ -482,18 +518,26 @@ footer {
       font-weight: 300; }
 
 .teaser {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .teaser h1 {
     font-size: 1.8em;
     text-transform: uppercase;
     font-weight: 300;
     margin: 0; }
   .teaser div {
-    flex: 1; }
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
   .teaser div:last-child {
     text-align: right;
-    flex: none; }
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none; }
 
 .title {
   font-size: 2em;
@@ -507,25 +551,25 @@ footer {
   .line:nth-child(1) {
     width: 100%; }
   .line:nth-child(2) {
-    width: 99%; }
+    width: 96%; }
   .line:nth-child(3) {
-    width: 98%; }
+    width: 100%; }
   .line:nth-child(4) {
-    width: 97%; }
+    width: 99%; }
   .line:nth-child(5) {
     width: 98%; }
   .line:nth-child(6) {
     width: 98%; }
   .line:nth-child(7) {
-    width: 99%; }
+    width: 100%; }
   .line:nth-child(8) {
-    width: 97%; }
+    width: 100%; }
   .line:nth-child(9) {
     width: 100%; }
   .line:nth-child(10) {
-    width: 99%; }
+    width: 96%; }
   .line:last-of-type {
-    width: 70%;
+    width: 39%;
     margin-bottom: 1em; }
 
 .background {

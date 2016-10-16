@@ -4,10 +4,12 @@ var rename = require('gulp-rename');
 var nunjucks = require('gulp-nunjucks');
 var browserSync = require('browser-sync').create();
 var babel = require('gulp-babel');
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('style', function () {
     return gulp.src('./scss/style.scss')
         .pipe(sass.sync().on('error', sass.logError))
+        .pipe(autoprefixer())
         .pipe(gulp.dest('./public/css'))
         .pipe(browserSync.stream());
 });
