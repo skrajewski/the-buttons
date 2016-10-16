@@ -1,6 +1,8 @@
 The Buttons Project
 ===============================
 
+http://skrajewski.github.io/the-buttons
+
 This repository contains **The Button Project**. In short, it's my simple experiment with HTML Buttons, the SASS technology, and a little different approach to writing CSS components.
 
 ![Button screenshot](_resource/buttons.png)
