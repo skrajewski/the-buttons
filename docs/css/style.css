@@ -417,23 +417,23 @@
   .line:nth-child(1) {
     width: 97%; }
   .line:nth-child(2) {
-    width: 99%; }
+    width: 96%; }
   .line:nth-child(3) {
-    width: 99%; }
+    width: 96%; }
   .line:nth-child(4) {
-    width: 100%; }
+    width: 96%; }
   .line:nth-child(5) {
-    width: 99%; }
+    width: 97%; }
   .line:nth-child(6) {
     width: 98%; }
   .line:nth-child(7) {
     width: 98%; }
   .line:nth-child(8) {
-    width: 98%; }
+    width: 100%; }
   .line:nth-child(9) {
     width: 98%; }
   .line:nth-child(10) {
-    width: 97%; }
+    width: 100%; }
   .line:last-of-type {
     width: 100%;
     margin-bottom: 1em; }

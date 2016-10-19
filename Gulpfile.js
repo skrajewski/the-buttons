@@ -22,7 +22,7 @@ gulp.task('watch', ['style', 'scripts'], function () {
     });
 
     gulp.watch('./scss/**/*.scss', ['style']);
-    gulp.watch('./public/**/*.html').on('change', browserSync.reload);
+    gulp.watch('./docs/**/*.html').on('change', browserSync.reload);
     gulp.watch('./build/js/*.js', ['scripts']).on('change', browserSync.reload);;
 });
 
